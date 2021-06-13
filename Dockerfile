@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends \
-    build-essential cmake ninja-build clang cppcheck doxygen graphviz
+    build-essential cmake ninja-build clang cppcheck doxygen graphviz git
 RUN rm -rf /var/lib/apt/lists/* && \
     apt-get clean
  
